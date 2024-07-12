@@ -10,6 +10,7 @@ padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   h1 {
     font-size: 50px;
     font-weight: 700;
@@ -42,11 +43,6 @@ const Home = () => {
           I have linked the pages in header and footer.User can
           update,edit,delete their own posts
         </Typography>
-        <Box className="imp">
-          <Typography variant="h3" color="initial">*Important Notes:-</Typography>
-          <Typography variant="body1" color="initial">There will be cors error,to remove the cors error please download the chrome extension and enable it,then refresh the page</Typography>
-          <img src={corsImage} alt="" />
-        </Box>
       </Container>
     </HomeWrap>
   );
