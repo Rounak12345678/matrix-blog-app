@@ -50,7 +50,7 @@ export default function Allblogs() {
   //implementing delete functionallity only for that user------->
 
   const deleteBlog = (_id) => {
-    const filterList = mainList.filter((_data, index) => _data?._id !== _id);
+    const filterList = mainList?.filter((_data, index) => _data?._id !== _id);
 
     setMainList(filterList);
     dispatch(delete_blog(_id)).then((data) => data && dispatch(getAllBlogs()));
