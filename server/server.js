@@ -6,17 +6,6 @@ dotenv.config({ path: "./config.env" });
 const app = require("./app");
 const port = 5000;
 
-
-
-
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']  // Add 'Authorization' to allowed headers
-}));
-
-
-
 const DB = process.env.DATABASE;
 
 mongoose
