@@ -2,6 +2,7 @@ const express = require("express");
 const userRouter = require("./routes/userRoute");
 const blogRouter = require("./routes/blogRoute");
 const commentRouter = require("./routes/commentRoute");
+const cors = require("cors");
 const app = express();
 
 app.use(cors({
